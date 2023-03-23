@@ -24,6 +24,7 @@ const ExploreCard = (
     variants={
       fadeIn('right', 'spring', index * 0.5, 0.75)
     }
+    onClick={() => handleClick(id)}
   >
     <img
       className="absolute w-full h-full
@@ -47,13 +48,29 @@ const ExploreCard = (
         justify-start w-full flex-col
         bg-[rgba(0,0,0,0.5)] rounded-b-[24px]"
       >
-        <div>
+        <div
+          className={`${styles.flexCenter}
+          w-[60px] h-[60px] rounded-[24px]
+          glassmorphism mb-[16px]`}
+        >
           <img
             className="w-1/2 h-1/2 object-contain"
             src="/headset.svg"
             alt="headset"
           />
         </div>
+          <p
+            className="font-normal text-[16px]
+            leading-[20px] text-white uppercase"
+          >
+            Enter the Metaverse
+          </p>
+          <h2
+            className='mt-[24px] font-semibold
+            sm-[32px] text-[24px] text-white'
+          >
+            {title}
+          </h2>
       </div>
     )}
   </motion.div>
