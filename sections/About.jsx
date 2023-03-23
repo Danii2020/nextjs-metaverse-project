@@ -50,7 +50,7 @@ const About = () => (
           explore
         </span> the metaverse world you want, turn your dreams into
         reality. Let's explore the madness of the metaverse
-        by scrolling down. Pablo fuck you!
+        by scrolling down.
       </motion.p>
 
       <motion.img

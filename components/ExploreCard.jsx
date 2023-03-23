@@ -5,14 +5,15 @@ import styles from '../styles';
 import { fadeIn } from '../utils/motion';
 
 const ExploreCard = (
-  {
-    id,
-    imgUrl,
-    title,
-    index,
-    active,
-    handleClick
-  }) => (
+    {
+      id,
+      imgUrl,
+      title,
+      index,
+      active,
+      handleClick,
+    }
+  ) => (
   <motion.div
     className={`relative ${
       active === id
@@ -58,7 +59,7 @@ const ExploreCard = (
             src="/headset.svg"
             alt="headset"
           />
-        </div>
+      </div>
           <p
             className="font-normal text-[16px]
             leading-[20px] text-white uppercase"
